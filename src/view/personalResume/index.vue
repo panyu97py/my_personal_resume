@@ -2,22 +2,23 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <firstPage/>
-      <!-- <div class="swiper-slide" style="background:blue">2</div>
-      <div class="swiper-slide" style="background:green">3</div>
-      <div class="swiper-slide" style="background:white">4</div>
-      <div class="swiper-slide" style="background:gray">5</div>
-      <div class="swiper-slide">6</div> -->
+      <secondPage/>
+      <thirdPage/>
     </div>
-    <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
 </template>
 <script>
 import Swiper from 'swiper'
 import firstPage from './components/firstPage'
+import secondPage from './components/secondPage'
+import thirdPage from './components/thirdPage'
+
 export default {
   components: {
-    firstPage
+    firstPage,
+    secondPage,
+    thirdPage
   },
   mounted () {
     var swiper = new Swiper('.swiper-container', {
