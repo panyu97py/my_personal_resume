@@ -13,7 +13,7 @@ export default {
   },
   methods: {
     initEchart (option) {
-      let Echart = this.$echarts.init(this.$el)
+      let Echart = this.$echarts.init(this.$el, 'macarons')
       Echart.setOption(option)
     }
   },

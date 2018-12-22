@@ -1,5 +1,5 @@
 <template>
-  <div id="secondPage" class="swiper-slide">
+  <div id="selfIntroduction" class="swiper-slide">
     <div class="content">
       <img src="/static/images/personalResume/User head.JPG" alt class="userHead">
       <p
@@ -10,7 +10,7 @@
   </div>
 </template>
 <style lang="scss">
-#secondPage {
+#selfIntroduction {
   position: relative;
   background: gray;
   width: 100%;

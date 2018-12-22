@@ -1,8 +1,15 @@
 @font-face {
   font-family: "SketchRockwell-Bold";
-  src: url("/static/font/SketchRockwell-Bold.woff2") format("woff2"),
-       url("/static/font/SketchRockwell-Bold.woff") format("woff"),
-       url("/static/font/SketchRockwell-Bold.ttf") format("truetype"),
-       url("/static/font/SketchRockwell-Bold.eot") format("embedded-opentype"),
-       url("/static/font/SketchRockwell-Bold.svg") format("svg");
+  src: url("/static/font/SketchRockwell-Bold/SketchRockwell-Bold.woff2") format("woff2"),
+       url("/static/font/SketchRockwell-Bold/SketchRockwell-Bold.woff") format("woff"),
+       url("/static/font/SketchRockwell-Bold/SketchRockwell-Bold.ttf") format("truetype"),
+       url("/static/font/SketchRockwell-Bold/SketchRockwell-Bold.eot") format("embedded-opentype"),
+       url("/static/font/SketchRockwell-Bold/SketchRockwell-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: "SkyFallDone";
+  src: url("/static//font/SkyFallDone/SkyFallDone.woff2") format("woff2"),
+       url("/static/font/SkyFallDone/SkyFallDone.woff") format("woff"),
+       url("/static/font/SkyFallDone/SkyFallDone.ttf") format("truetype"),
+       url("/static/font/SkyFallDone/SkyFallDone.svg") format("svg");
 }

@@ -6,12 +6,16 @@ import router from './router'
 import '@/styles/index.scss'
 import 'swiper/dist/css/swiper.min.css'
 import echarts from 'echarts'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 Vue.prototype.$echarts = echarts
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  render: h => h(App),
   router,
   components: { App },
   template: '<App/>'

@@ -2,8 +2,10 @@
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <firstPage/>
-      <secondPage/>
-      <thirdPage/>
+      <selfIntroduction/>
+      <myTechnologyStack/>
+      <myWorkExperience/>
+      <myProjectExperience/>
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -11,14 +13,17 @@
 <script>
 import Swiper from 'swiper'
 import firstPage from './components/firstPage'
-import secondPage from './components/secondPage'
-import thirdPage from './components/thirdPage'
-
+import selfIntroduction from './components/selfIntroduction'
+import myTechnologyStack from './components/myTechnologyStack'
+import myWorkExperience from './components/myWorkExperience'
+import myProjectExperience from './components/myProjectExperience'
 export default {
   components: {
     firstPage,
-    secondPage,
-    thirdPage
+    selfIntroduction,
+    myTechnologyStack,
+    myWorkExperience,
+    myProjectExperience
   },
   mounted () {
     var swiper = new Swiper('.swiper-container', {

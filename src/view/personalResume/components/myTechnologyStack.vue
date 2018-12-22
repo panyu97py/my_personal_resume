@@ -1,5 +1,5 @@
 <template>
-  <div id="thirdPage" class="swiper-slide">
+  <div id="myTechnologyStack" class="swiper-slide">
     <div class="content">
       <Echart class="echart" :option="EchartOption"/>
     </div>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-#thirdPage {
+#myTechnologyStack {
   position: relative;
   background: gray;
   width: 100%;
@@ -34,7 +34,7 @@ export default {
     left: 0;
     right: 0;
     margin: auto;
-    width: 60%;
+    width: 50%;
     height: 60%;
     text-align: center;
     .echart{
