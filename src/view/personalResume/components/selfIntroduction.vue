@@ -13,10 +13,7 @@
 </template>
 <style lang="scss">
 #selfIntroduction {
-  // position: relative;
-  // background: gray;
   background: url("/static/images/personalResume/background (3).jpg") no-repeat;
-  background-color: white;
   background-size: cover;
   width: 100%;
   height: 100%;

@@ -6,6 +6,8 @@
   </div>
 </template>
 <style lang="scss">
+@import './variable.scss';
+
 #TimeAxisTransverse {
   position: relative;
   width: 100%;
@@ -28,8 +30,8 @@
   background: none;
   margin-top: -45px;
   border-radius: 50%;
-  color: #ffd200;
-  border: 8px solid white;
+  color: $headAndDateColor;
+  border: 8px solid $TimeAxisColor;
   font: {
     size: 17px;
     weight: 900;
@@ -44,6 +46,6 @@
   margin-top: -5px;
   border-radius: 5px;
   width: calc(100% - 90px);
-  background: white;
+  background: $TimeAxisColor;
 }
 </style>

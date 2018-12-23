@@ -1,5 +1,6 @@
 // const animationDuration = 6000
 export default {
+  color: ['#2C69E4', '#3DAAD7', '#60E5D7', '#845CD9', '#FF7734', '#FFAC17'],
   title: {
     text: '技术栈'
   },

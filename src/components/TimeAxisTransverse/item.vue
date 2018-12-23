@@ -7,7 +7,7 @@
       <div class="timeAxisItem_content_title">
         <p>{{title}}</p>
       </div>
-      <p v-html="content" style="text-indent:2em"/>
+      <p v-html="content" style="text-indent:2em;padding:5px;"/>
     </div>
   </div>
 </template>
@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './variable.scss';
 #timeAxisItem {
   position: relative;
   width: 25%;
@@ -43,38 +44,44 @@ export default {
     position: absolute;
     left: 50%;
     top: calc(50% - 160px);
-    // top: calc(50% - 45px);
     z-index: 2;
     margin-left: -45px;
     width: 74px;
     height: 74px;
-    border: 8px solid white;
-    background: white;
+    border: 8px solid $TimeAxisItemColor;
+    // background: white;
     border-radius: 50%;
     p {
       margin: 0;
       line-height: 74px;
+      color: $headAndDateColor;
+      font: {
+        size: 17px;
+        weight: 900;
+      }
     }
   }
   .timeAxisItem_date::after {
     content: "";
     width: 10px;
-    height: 80px;
+    height: 25vh;
+    z-index: 1;
     position: absolute;
-    background: white;
+    background:$TimeAxisItemColor;
     margin-left: -5px;
   }
   .timeAxisItem_content {
     position: absolute;
     bottom: 0;
+    z-index: 2;
     width: 100%;
     height: 40%;
     border-radius: 10px;
-    background: white;
-      font-size: 1vw;
+    background: $contentBackgroundColor;
+    font-size: 1vw;
     .timeAxisItem_content_title {
       width: 100%;
-      background: red;
+      background: $titleBackgroundColor;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       height: 20%;
@@ -87,16 +94,6 @@ export default {
       }
     }
   }
-  .timeAxisItem_content:before {
-    content: "";
-    width: 10px;
-    height: 25%;
-    position: absolute;
-    background: white;
-    margin-left: -5px;
-    left: 50%;
-    top: -25%;
-  }
 }
 #timeAxisItem:nth-child(even) {
   .timeAxisItem_date {
@@ -106,7 +103,7 @@ export default {
     top: 0;
   }
   .timeAxisItem_date::after {
-    top: -88px;
+    top: -25vh;
   }
   .timeAxisItem_content:before {
     top: 100%;
