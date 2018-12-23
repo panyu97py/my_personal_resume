@@ -1,7 +1,8 @@
 <template>
   <div class="swiper-container">
+    <suspendedFrame/>
     <div class="swiper-wrapper">
-      <firstPage/>
+      <helloPage/>
       <selfIntroduction/>
       <myTechnologyStack/>
       <myWorkExperience/>
@@ -12,24 +13,26 @@
 </template>
 <script>
 import Swiper from 'swiper'
-import firstPage from './components/firstPage'
+import suspendedFrame from './components/suspendedFrame'
+import helloPage from './components/helloPage'
 import selfIntroduction from './components/selfIntroduction'
 import myTechnologyStack from './components/myTechnologyStack'
 import myWorkExperience from './components/myWorkExperience'
 import myProjectExperience from './components/myProjectExperience'
 export default {
   components: {
-    firstPage,
+    helloPage,
     selfIntroduction,
     myTechnologyStack,
     myWorkExperience,
-    myProjectExperience
+    myProjectExperience,
+    suspendedFrame
   },
   mounted () {
     var swiper = new Swiper('.swiper-container', {
       direction: 'vertical',
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 0,
       mousewheel: true,
       pagination: {
         el: '.swiper-pagination',
@@ -42,11 +45,13 @@ export default {
 </script>
 <style lang="scss">
 .swiper-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  height: 100%;
   .swiper-wrapper {
     width: 100%;
     height: 100%;

@@ -1,7 +1,9 @@
 <template>
   <div id="myTechnologyStack" class="swiper-slide">
-    <div class="content">
-      <Echart class="echart" :option="EchartOption"/>
+    <div class="layerMask">
+      <div class="content">
+        <Echart class="echart" :option="EchartOption"/>
+      </div>
     </div>
   </div>
 </template>
@@ -23,10 +25,15 @@ export default {
 
 <style lang="scss">
 #myTechnologyStack {
-  position: relative;
-  background: gray;
+  background: url("/static/images/personalResume/background (5).jpg");
   width: 100%;
   height: 100%;
+  .layerMask {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(86, 83, 100, 0.7);
+  }
   .content {
     position: absolute;
     top: 0;
@@ -34,10 +41,10 @@ export default {
     left: 0;
     right: 0;
     margin: auto;
-    width: 50%;
+    width: 60%;
     height: 60%;
     text-align: center;
-    .echart{
+    .echart {
       width: 100%;
       height: 100%;
     }
