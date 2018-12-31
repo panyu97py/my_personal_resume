@@ -1,6 +1,10 @@
 <template>
   <div id="myProjectExperience" class="swiper-slide">
-    我的项目经历
+    <div class="layerMask">
+      <div>
+
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -18,11 +22,18 @@ export default {
 <style lang="scss">
 #myProjectExperience {
   position: relative;
-  background: gray;
+  background: url("/static/images/personalResume/background (7).jpg") no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
-  .title {
-    text-align: center;
+  .layerMask {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(86, 83, 100, 0.7);
+    .title {
+      text-align: center;
+    }
   }
 }
 </style>
