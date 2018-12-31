@@ -25,7 +25,8 @@ export default {
 
 <style lang="scss">
 #myTechnologyStack {
-  background: url("/static/images/personalResume/background (5).jpg");
+  background: url("/static/images/personalResume/background (5).jpg") no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   .layerMask {

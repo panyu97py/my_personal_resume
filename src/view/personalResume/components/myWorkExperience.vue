@@ -38,7 +38,9 @@ export default {
 <style lang="scss">
 #myWorkExperience {
   // position: relative;
-  background: url("/static/images/personalResume/background (4).jpg") no-repeat;
+  background: url("/static/images/personalResume/background (6).jpeg") no-repeat;
+
+  // background: gray;
   background-size: cover;
   width: 100%;
   height: 100%;

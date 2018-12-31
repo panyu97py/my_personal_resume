@@ -31,13 +31,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import './variable.scss';
+@import "./variable.scss";
 #timeAxisItem {
   position: relative;
   width: 25%;
   height: 100%;
   margin: {
-    left: 50px;
+    left: 8%;
   }
   float: left;
   .timeAxisItem_date {
@@ -67,7 +67,7 @@ export default {
     height: 25vh;
     z-index: 1;
     position: absolute;
-    background:$TimeAxisItemColor;
+    background: $TimeAxisItemColor;
     margin-left: -5px;
   }
   .timeAxisItem_content {
@@ -79,6 +79,8 @@ export default {
     border-radius: 10px;
     background: $contentBackgroundColor;
     font-size: 1vw;
+    text-align: left;
+
     .timeAxisItem_content_title {
       width: 100%;
       background: $titleBackgroundColor;
@@ -86,6 +88,7 @@ export default {
       border-top-right-radius: 10px;
       height: 20%;
       p {
+        text-align: center;
         margin: 0;
         line-height: 6vh;
         height: 100%;

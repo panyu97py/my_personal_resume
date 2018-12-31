@@ -6,7 +6,7 @@ export default {
   },
   tooltip: {
     trigger: 'item',
-    formatter: '{a} <br/>{b} : {c}%'
+    formatter: '{a} <br/>{b} : {c}分'
   },
   legend: {
     type: 'scroll',
